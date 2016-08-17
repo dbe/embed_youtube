@@ -46,3 +46,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#Shopify stuff added by Brian
+gem 'shopify_app'
+#Added due to activeresource not being bundled in rails 5.0.0 yet. Suggested by: https://github.com/Shopify/shopify_app
+gem 'activeresource', github: 'rails/activeresource'
